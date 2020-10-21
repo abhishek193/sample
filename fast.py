@@ -25,7 +25,7 @@ test_files = os.listdir(os.getcwd())
 for x in test_files:
     if x.endswith('.jpg'):
         files.append(x)
-    shutil.copyfile('/sample/x', '/sample/train50/train')
+        shutil.copyfile('/sample/x', '/sample/train50/train')
 print(len(files))
 os.chdir(path)
 
