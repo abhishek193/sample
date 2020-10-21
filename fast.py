@@ -36,6 +36,6 @@ def train(files):
     return learn
 
 #getdata()
-my_model = train(files)
+#my_model = train(files)
 
 #my_model.save('my_model')
