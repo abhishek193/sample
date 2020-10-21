@@ -10,6 +10,7 @@ def predict(model, image):
     out = model.predict(image)
     return out
 
-print(os.getcwd())
+path = os.getcwd()+'/test10/test'
+os.chdir('/dataset/test10/test')
 out = predict(fast.my_model, '1.jpg')
 print(out)
