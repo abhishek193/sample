@@ -18,12 +18,14 @@ def label_func(f):
   return f[0] == 't'
 
 import os
+import shutil
 files = os.listdir(os.getcwd()+'/train50/train')
 path = os.getcwd() + '/train50/train'
 test_files = os.listdir(os.getcwd())
 for x in test_files:
     if x.endswith('.jpg'):
         files.append(x)
+    shutil.copyfile('/sample/x', '/sample/train50/train')
 print(len(files))
 os.chdir(path)
 
