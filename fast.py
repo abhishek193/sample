@@ -24,7 +24,7 @@ test_files = os.listdir(os.getcwd())
 for x in test_files:
     if x.endswith('.jpg'):
         files.append(x)
-
+print(len(files))
 os.chdir(path)
 
 def train(files):
