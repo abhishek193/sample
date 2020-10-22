@@ -12,5 +12,5 @@ def predict(model, image):
 
 path = os.getcwd()+'/test10/test'
 os.chdir('/sample/test10/test')
-out = predict(fast.my_model, '1.jpg')
+out = predict(fast.my_model, '15.jpg') #15.jpg is a tennis image
 print(out)
